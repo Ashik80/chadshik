@@ -1,6 +1,7 @@
 require "plugins.plugins"
 require "plugins.telescope"
 require "plugins.treesitter"
+require "plugins.cmp"
 require "plugins.lspconfig"
 require "plugins.mason"
 require "plugins.nvimtree"

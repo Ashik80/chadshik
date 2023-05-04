@@ -39,4 +39,9 @@ return require('packer').startup(function(use)
 
   use { 's1n7ax/nvim-terminal' }
 
+  use {
+    'hrsh7th/cmp-nvim-lsp',
+    'hrsh7th/nvim-cmp'
+  }
+
 end)
