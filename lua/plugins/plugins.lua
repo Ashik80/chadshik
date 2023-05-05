@@ -48,4 +48,6 @@ return require('packer').startup(function(use)
 		'MunifTanjim/prettier.nvim',
 	}
 
+	use { 'nvim-lualine/lualine.nvim' }
+
 end)
