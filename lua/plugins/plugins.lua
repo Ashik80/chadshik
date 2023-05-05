@@ -31,8 +31,7 @@ return require('packer').startup(function(use)
   }
 
   use {'romgrk/barbar.nvim', requires = {
-    'lewis6991/gitsigns.nvim', -- OPTIONAL: for git status
-    'nvim-tree/nvim-web-devicons', -- OPTIONAL: for file icons
+    'lewis6991/gitsigns.nvim',
   }}
 
   use { 'numToStr/Comment.nvim' }
@@ -43,5 +42,10 @@ return require('packer').startup(function(use)
     'hrsh7th/cmp-nvim-lsp',
     'hrsh7th/nvim-cmp'
   }
+
+	use {
+		'jose-elias-alvarez/null-ls.nvim',
+		'MunifTanjim/prettier.nvim',
+	}
 
 end)
