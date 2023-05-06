@@ -6,6 +6,10 @@ vim.keymap.set("n", "<C-w>", ":q!<CR>")
 vim.keymap.set("n", "<leader>fe", vim.cmd.EslintFixAll)
 vim.keymap.set("n", "<esc>", vim.cmd.noh)
 
+-- move lines
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
 -- Copy/paste
 vim.keymap.set("n", "yy", '"+yy')
 vim.keymap.set("v", "y", '"+y')
