@@ -19,6 +19,7 @@ ChadShik is a powerful and feature-rich Neovim configuration designed to enhance
 -   Autocompletion with  [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
 -   Commenting functionality with [Comment.nvim](https://github.com/numToStr/Comment.nvim)
 -   Code formatting with  [eslint](https://eslint.org/)  and  [prettier](https://prettier.io/)
+-   Color highlighting with [nvim-colorizer](https://github.com/norcalli/nvim-colorizer.lua)
 
 ## Installation
 
