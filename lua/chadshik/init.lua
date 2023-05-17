@@ -6,6 +6,7 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
+vim.opt.relativenumber = true
 
 -- Sets the cursor to be a block cursor even in insert mode
 vim.opt.guicursor = "n-v-c-sm:block,i-ci-ve:block,r-cr-o:hor20"
