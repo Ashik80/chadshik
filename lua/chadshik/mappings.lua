@@ -1,13 +1,13 @@
 vim.g.mapleader = " "
 
-vim.keymap.set("n", "<C-n>", vim.cmd.NvimTreeToggle)
+vim.keymap.set("n", "<C-n>", vim.cmd.Ex)
 vim.keymap.set("n", "<C-s>", vim.cmd.w)
 vim.keymap.set("n", "<C-q>", [[:q!<CR>]])
 vim.keymap.set("n", "<leader>fe", vim.cmd.EslintFixAll)
 vim.keymap.set("n", "<esc>", vim.cmd.noh)
 
 -- Terminal
-vim.keymap.set("n", "<leader>t", [[:belowright 15 split term://bash<CR>]])
+vim.keymap.set("n", "<leader>t", [[:belowright 15 split | term<CR>]])
 vim.keymap.set("n", "<leader>ht", vim.cmd.close)
 vim.keymap.set('t', 'xx', [[<C-\><C-n>]])
 vim.keymap.set("n", "<leader>+", [[:resize +5<CR>]])
