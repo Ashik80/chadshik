@@ -9,10 +9,14 @@ return require('packer').startup(function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  -- Themes
   use { "catppuccin/nvim", as = "catppuccin" }
+  use { "sainnhe/everforest" }
 
+  -- Treesitter
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
+  -- Lsp
   use { 'neovim/nvim-lspconfig' }
 
   use {
