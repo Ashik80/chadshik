@@ -19,36 +19,38 @@ return require('packer').startup(function(use)
   -- Lsp
   use { 'neovim/nvim-lspconfig' }
 
+  -- Mason
   use {
     "williamboman/mason.nvim",
     run = ":MasonUpdate"
   }
+  use { "williamboman/mason-lspconfig.nvim" }
 
-  use {
-    "williamboman/mason-lspconfig.nvim",
-    requires = { {"williamboman/mason.nvim"} }
-  }
-
+  -- Icons
   use { 'nvim-tree/nvim-web-devicons' }
 
-  use {'romgrk/barbar.nvim', requires = {
-    'lewis6991/gitsigns.nvim',
-  }}
+  -- Git
+  use { 'lewis6991/gitsigns.nvim' }
 
+  -- Comment
   use { 'numToStr/Comment.nvim' }
 
+  -- Autocompletion
   use {
     'hrsh7th/cmp-nvim-lsp',
     'hrsh7th/nvim-cmp'
   }
 
+  -- Formatter/Linter
 	use {
 		'jose-elias-alvarez/null-ls.nvim',
 		'MunifTanjim/prettier.nvim',
 	}
 
+  -- Status line
 	use { 'nvim-lualine/lualine.nvim' }
 
+  -- CSS colorizer
   use { 'norcalli/nvim-colorizer.lua' }
 
 end)

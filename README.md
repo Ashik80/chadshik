@@ -11,7 +11,6 @@ ChadShik is a powerful and feature-rich Neovim configuration designed to enhance
 -   Plugin management with  [packer.nvim](https://github.com/wbthomason/packer.nvim)
 -   Fuzzy file finding and more with  [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 -   Editor tools management using  [mason.nvim](https://github.com/williamboman/mason.nvim)
--   Enhanced buffer management with  [barbar.nvim](https://github.com/romgrk/barbar.nvim)
 -   Beautiful status line using  [lualine.nvim](https://github.com/hoob3rt/lualine.nvim)
 -   Advanced syntax highlighting with  [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 -   Language server integration using  [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
