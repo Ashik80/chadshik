@@ -42,13 +42,7 @@ return require('packer').startup(function(use)
   }
 
   -- Formatter/Linter
-	use {
-		'jose-elias-alvarez/null-ls.nvim',
-		'MunifTanjim/prettier.nvim',
-	}
-
-  -- Status line
-	use { 'nvim-lualine/lualine.nvim' }
+	use { 'jose-elias-alvarez/null-ls.nvim' }
 
   -- CSS colorizer
   use { 'norcalli/nvim-colorizer.lua' }

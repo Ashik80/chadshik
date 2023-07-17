@@ -14,5 +14,6 @@ vim.opt.guicursor = "n-v-c-sm:block,i-ci-ve:block,r-cr-o:hor20"
 
 require "chadshik.mappings"
 require "plugins"
+require "chadshik.statusline"
 
 vim.cmd.colorscheme "everforest"
