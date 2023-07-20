@@ -17,8 +17,6 @@ function StatusLineGitBranch()
 	return IsGitRepo() and giticon.." "..branchname or ""
 end
 
-local git_branch = StatusLineGitBranch()
-
 local modes = {
   ['n']  = 'NORMAL',
   ['v']  = 'VISUAL',
@@ -38,16 +36,18 @@ local function mode()
   return modes[current_mode]
 end
 
-function GetStatusLine()
+function GetStatusLine(branchName)
   local statusline = ''
 
   if vim.bo.buftype == 'terminal' then
     statusline = '%#Pmenu# terminal'
   else
-    statusline = '%#PmenuSel# '..mode()..(git_branch ~= '' and ' %#Pmenu# '..git_branch or '')..' %#LineNr# %t %m %=%y %#Pmenu# %p%% %#PmenuSel# %l:%c '
+    statusline = '%#PmenuSel# '..mode()..(branchName ~= '' and ' %#Pmenu# '..branchName or '')..' %#LineNr# %t %m %=%y %#Pmenu# %p%% %#PmenuSel# %l:%c '
   end
 
   return statusline
 end
 
-vim.cmd("autocmd BufEnter,TermOpen * setlocal statusline=%!v:lua.GetStatusLine()")
+vim.cmd("autocmd VimEnter * silent! lcd %:p:h")
+vim.cmd("autocmd BufEnter * let gitBranch = v:lua.StatusLineGitBranch()")
+vim.cmd("autocmd BufEnter,TermOpen * setlocal statusline=%!v:lua.GetStatusLine(gitBranch)")
