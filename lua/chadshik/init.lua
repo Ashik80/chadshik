@@ -7,6 +7,8 @@ vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 vim.opt.relativenumber = true
+vim.opt.splitbelow = true
+vim.opt.splitright = true
 vim.g.netrw_localcopydircmd = "cp -r"
 
 -- Sets the cursor to be a block cursor even in insert mode
@@ -16,4 +18,4 @@ require "chadshik.mappings"
 require "plugins"
 require "chadshik.statusline"
 
-vim.cmd.colorscheme "everforest"
+vim.cmd.colorscheme "habamax"
