@@ -1,6 +1,6 @@
 vim.g.mapleader = " "
 
-vim.keymap.set("n", "<C-n>", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>n", vim.cmd.Ex)
 vim.keymap.set("n", "<C-s>", vim.cmd.w)
 vim.keymap.set("n", "<leader>fe", vim.cmd.EslintFixAll)
 vim.keymap.set("n", "<esc>", vim.cmd.noh)
@@ -27,9 +27,3 @@ vim.keymap.set("n", "<C-h>", ":wincmd h<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<C-j>", ":wincmd j<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<C-k>", ":wincmd k<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<C-l>", ":wincmd l<CR>", { noremap = true, silent = true })
-
--- Git
-vim.keymap.set("n", "<leader>gb", [[:Gitsigns blame_line<CR>]])
-vim.keymap.set("n", "<leader>gtb", [[:Gitsigns toggle_current_line_blame<CR>]])
-vim.keymap.set("n", "<leader>gd", [[:Gitsigns diffthis<CR>]])
-vim.keymap.set("n", "<leader>gh", [[:Gitsigns preview_hunk<CR>]])

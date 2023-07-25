@@ -4,29 +4,13 @@ cmp.setup {
   sources = {
     { name = 'nvim_lsp' }
   },
-  mapping = {
-    ['<Tab>'] = function(fallback)
-      if cmp.visible() then
-        cmp.select_next_item()
-      else
-        fallback()
-      end
-    end,
-    ['<S-Tab>'] = function(fallback)
-      if cmp.visible() then
-        cmp.select_prev_item()
-      else
-        fallback()
-      end
-    end,
-    ['<CR>'] = function(fallback)
-      if cmp.visible() then
-        cmp.confirm()
-      else
-        fallback()
-      end
-    end
-  },
+  mapping = cmp.mapping.preset.insert({
+    ['<C-b>'] = cmp.mapping.scroll_docs(-4),
+    ['<C-f>'] = cmp.mapping.scroll_docs(4),
+    ['<C-Space>'] = cmp.mapping.complete(),
+    ['<C-e>'] = cmp.mapping.abort(),
+    ['<CR>'] = cmp.mapping.confirm({ select = true }),
+  }),
 	snippet = {
     -- We recommend using *actual* snippet engine.
     -- It's a simple implementation so it might not work in some of the cases.

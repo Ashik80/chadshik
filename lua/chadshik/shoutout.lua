@@ -1,0 +1,18 @@
+function ShoutOutConfig()
+  vim.cmd([[:so ~/.config/nvim/init.lua]])
+  vim.cmd([[:so ~/.config/nvim/lua/chadshik/init.lua]])
+  vim.cmd([[:so ~/.config/nvim/lua/chadshik/shoutout.lua]])
+  vim.cmd([[:so ~/.config/nvim/lua/chadshik/mappings.lua]])
+  vim.cmd([[:so ~/.config/nvim/lua/chadshik/statusline.lua]])
+
+  vim.cmd([[:so ~/.config/nvim/lua/plugins/cmp.lua]])
+  vim.cmd([[:so ~/.config/nvim/lua/plugins/colorizer.lua]])
+  vim.cmd([[:so ~/.config/nvim/lua/plugins/comment.lua]])
+  vim.cmd([[:so ~/.config/nvim/lua/plugins/gitsigns.lua]])
+  vim.cmd([[:so ~/.config/nvim/lua/plugins/init.lua]])
+  vim.cmd([[:so ~/.config/nvim/lua/plugins/lspconfig.lua]])
+  vim.cmd([[:so ~/.config/nvim/lua/plugins/null_ls.lua]])
+  vim.cmd([[:so ~/.config/nvim/lua/plugins/plugins.lua]])
+  vim.cmd([[:so ~/.config/nvim/lua/plugins/telescope.lua]])
+  vim.cmd([[:so ~/.config/nvim/lua/plugins/treesitter.lua]])
+end

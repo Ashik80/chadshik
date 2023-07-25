@@ -1,6 +1,4 @@
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = { "lua", "vim", "vimdoc", "typescript", "javascript", "html", "css", "scss", "tsx", "json", "python" },
-
   sync_install = false,
 
   -- Automatically install missing parsers when entering buffer

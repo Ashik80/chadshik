@@ -12,6 +12,7 @@ return require('packer').startup(function(use)
   -- Themes
   use { "catppuccin/nvim", as = "catppuccin" }
   use { "sainnhe/everforest" }
+  use({ 'rose-pine/neovim', as = 'rose-pine' })
 
   -- Treesitter
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
