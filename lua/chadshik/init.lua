@@ -3,8 +3,8 @@ vim.opt.number = true
 vim.opt.foldmethod = "indent"
 vim.opt.foldlevel = 99
 vim.opt.clipboard = "unnamedplus"
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.relativenumber = true
 vim.opt.splitbelow = true
@@ -14,6 +14,7 @@ vim.opt.incsearch = true
 vim.opt.scrolloff = 8
 vim.opt.wrap = false
 vim.opt.hidden = true
+vim.opt.colorcolumn = "80"
 vim.g.netrw_localcopydircmd = "cp -r"
 
 -- Sets the cursor to be a block cursor even in insert mode
